@@ -1,0 +1,540 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.head{
+    position: relative;
+    height: 85vh;
+    background-image: url("ourwork.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+.head::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 1;
+    display: grid;
+}
+.contact{
+    position: absolute;
+    font-family: "Baloo Bhaijaan 2", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 11vh;
+    color: white;
+    opacity: 0;
+    z-index: 2;
+    margin-top: 40vh;
+    transition: opacity 2s ease-in-out;
+    margin-left: 39vw;
+}
+.main-head{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 3;
+}
+.logo{
+    display: flex;
+}
+
+.nav{
+    display: flex;
+    margin-left:30vw ;
+
+}
+.img img{
+    height: 5vh;
+    width: 5vw;
+}
+.nav div{
+    margin-right: 1vw;
+    margin-top: 5vh;
+    font-size: larger;
+}
+.logo div{
+    margin-left: 2vw;
+    margin-top: 3vh;
+    font-size: 5vh;
+}
+.name{
+    font-size: larger;
+}
+.nav div a{
+    text-decoration: none;
+    color: white;
+}
+
+  .name{
+    background: linear-gradient(#f2fdff,#9ad4d6,#dbcbd8,red);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 5vh;
+    font-family: "Lora";
+  }
+  .anchor:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: rgba(240, 255, 255, 0.585);
+    text-decoration-color: rgba(240, 255, 255, 0.585);;
+  }
+
+
+.line{
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 1s ease-in-out;
+}
+.line1{
+    margin-top: 40vh;
+    margin-left: 32vw;
+}
+.line2{
+    margin-top: 60vh;
+    margin-left: 32vw;
+}
+.bold{
+    position: absolute;
+    margin-top: 6vw;
+    margin-left: 5vw;
+    font-family: "Baloo Bhaijaan 2";
+}
+.anchor{
+    margin-right: 1rem;
+}
+
+.nav-toggle{
+    display: none;
+  }
+@media (max-width: 480px){
+    .logo{
+    display: flex;
+    position: relative;
+
+  }
+
+  .line4{
+    margin-top: 45rem;
+  }
+  .line2{
+    margin-top: 15rem;
+  }
+
+
+  .text{
+    width: 70vw;
+    margin-right: auto;
+    margin-left:auto;
+    height: 30vh;
+    margin-top: 15rem;
+  }
+
+  .contact{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 10vh;
+  }
+  .img{
+  width: 15vw;
+  }
+  .img img{
+  width: 15vw;
+  height: 4vh;
+  margin-top: 0px;
+  }
+  .logo div{
+    font-size: 3.5vh;
+  }
+  .name{
+  height: 7vh;
+  font-size: medium;
+  width: fit-content;
+  margin-top:2vh;
+  }
+  .main-head{
+  display: block;
+  height: 20vh;
+  }
+  .head{
+  height: 90vh;
+  }
+  .head1{
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-toggle{
+  color: white;
+  display:flex;
+  font-size: 3vh;
+  text-align: right;
+  margin-right: 0rem;
+  margin-top: 3.7vh;
+  margin-left: 3.6rem;
+  }
+
+  .nav-toggle:hover{
+    cursor: pointer;
+  }
+  .nav{
+  position: absolute;
+  height: 100vh;
+  width: 0vw;
+  background: linear-gradient(to right, #1a1a1a, #2c3e50, #4b1d3f);
+  top: 0px;
+  opacity: 0.99;
+  z-index: 90;
+  margin-left:0px ;
+
+  }
+  .line6{
+  opacity: 100;
+  z-index: 100;
+  margin-left:0px ;
+  position: absolute;
+  margin-top: 35vh;
+  background-color: #ffffff;
+  height: 1px;
+  transition: width 0.5s ease-in-out;
+  }
+  .line5{
+  opacity: 100;
+  z-index: 100;
+  margin-left:0px ;
+  position: absolute;
+  margin-top: 20vh;
+  background-color: #ffffff;
+  height: 1px;
+  transition: width 0.5s ease-in-out;
+
+  }
+  .line3{
+  opacity: 100;
+  z-index: 100;
+  margin-left:0px ;
+  position: absolute;
+  margin-top: 55vh;
+  height: 1px;
+  background-color: #ffffff;
+  transition: width 0.5s ease-in-out;
+  }
+  .line8{
+  opacity: 100;
+  z-index: 100;
+  margin-left:0px ;
+  position: absolute;
+  margin-top: 76vh;
+  background-color: #ffffff;
+  height: 1px;
+  transition: width 0.5s ease-in-out;
+  }
+  .nav div button{
+  display: none;
+  }
+  .nav div{
+  display: block;
+  margin-left: 10px;
+  width: 100%;
+  }
+  .line{
+  font-size: 10vh;
+  margin-top: 10vh;
+  }
+  .anchor{
+  opacity: 0;
+  transition: opacity 0s ease-in-out;
+  }
+
+  .line1{
+    margin-top: 35vh;
+  }
+  .line2{
+    margin-top: 75vh;
+  }
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* Main  */
+
+
+
+
+
+
+
+
+
+
+ .main h3  {
+  text-align: center;
+  margin-top: 8vh;
+  font-size: 2rem;
+  color: #28425c;
+}
+
+.main h1 {
+  text-align: center;
+  margin-top: -6vh;
+  font-size: 3rem;
+  color: #131d27;
+}
+
+.card {
+  border: none;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  margin-bottom: 20px; /* Add space between cards */
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.card:hover img {
+  transform: scale(1.03);
+  opacity: 1;
+}
+
+.card-img-overlay {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 1.5rem;
+  transition: background 0.3s ease-in-out;
+}
+
+.card:hover .card-img-overlay {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.card-title {
+  color: #ffcc00;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.card:hover .card-title {
+  color: #ffd700;
+}
+
+.card-text {
+  color: #f8f9fa;
+  transition: color 0.3s ease-in-out;
+}
+
+.card:hover .card-text {
+  color: #e1e1e1;
+}
+
+.card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
+
+
+
+
+
+.footer {
+ margin-top: 2vh;
+  background: #222;
+  color: white;
+  padding: 40px 0;
+
+}
+
+.ftop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #555;
+}
+
+.flogo {
+  display: flex;
+  align-items: center;
+}
+
+.flogo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.fsocial a,
+.developer-social a {
+  color: white;
+  margin: 0 10px;
+  font-size: 20px;
+  transition: color 0.3s ease-in-out;
+}
+
+.fsocial a:hover,
+.developer-social a:hover {
+  color: #ffcc00;
+}
+
+.fcontent {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  padding: 20px 0;
+
+}
+
+.fsection h3 {
+  margin-bottom: 15px;
+  color: #e4c031;
+  /* color: #ffcc00; */
+
+}
+
+.fsection ul {
+ /* margin-left: 2vw; */
+  list-style: none;
+
+
+}
+
+.fsection ul li {
+  margin-bottom: 7px;
+}
+
+.fsection ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.fsection ul li a:hover {
+  color: #ffcc00;
+}
+
+.fbottom {
+  text-align: center;
+  padding-top: 15px;
+  border-top: 1px solid #555;
+}
+
+.fsection p,ul,a{
+ margin-left: 15px;
+}
+.developer-social{
+ margin-left: 15px;
+ margin-top: -15px;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .main-head {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .nav {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .nav div {
+      margin-right: 0;
+      margin-top: 2vh;
+      font-size: medium;
+  }
+
+  .logo div {
+      margin-left: 0;
+      margin-top: 2vh;
+      font-size: 4vh;
+  }
+
+  .card1 {
+      flex-direction: column;
+      padding: 2rem;
+  }
+
+  .head01 {
+      font-size: 3rem;
+      margin-right: 0;
+  }
+
+  .text {
+      font-size: 1rem;
+      text-align: center;
+  }
+
+  .card2 {
+      flex-direction: column;
+      padding: 2rem;
+  }
+
+  .text2 {
+      max-width: 100%;
+      text-align: center;
+  }
+
+  .imgf {
+      width: 100%;
+      justify-content: center;
+      margin-top: 2rem;
+  }
+
+  .imgf img {
+      max-width: 300px;
+  }
+
+  .flogo img {
+      height: 40px;
+  }
+
+  .fsocial a,
+  .developer-social a {
+      font-size: 18px;
+  }
+
+  .fcontent {
+      grid-template-columns: 1fr;
+  }

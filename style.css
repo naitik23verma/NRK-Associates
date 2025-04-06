@@ -1,0 +1,621 @@
+html{
+  scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.main-head{
+    display: flex;
+    justify-content: space-between;
+}
+.head{
+    height: 100vh;
+   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(linedphoto-cGcHSGzSDoM-unsplash.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.logo{
+    display: flex;
+    position: relative;
+}
+
+.nav{
+    display: flex;
+
+}
+.img img{
+    height: 5vh;
+    width: 5vw;
+}
+.nav div{
+    margin-right: 2.2vw;
+    margin-top: 5vh;
+    font-size: larger;
+}
+.logo div{
+    margin-left: 2vw;
+    margin-top: 3vh;
+    font-size: 5vh;
+}
+.name{
+    font-size: larger;
+}
+.nav div a{
+    text-decoration: none;
+    color: white;
+}
+
+  .name{
+    background: linear-gradient(#f2fdff,#9ad4d6,#dbcbd8,red);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 5vh;
+    font-family: "Lora";
+  }
+  .card{
+    width: 10vw;
+    margin-top: 10vh;
+    background-color: #dbcbd8;
+  }
+  .upper{
+    display: flex;
+    margin-left: 10vw;
+    height: 20vh;
+    margin-bottom: 0;
+    background-color:#9ad4d6 ;
+    width: 20vw;
+    padding: 1rem,1rem,1rem,1rem;
+  }
+  .lower{
+    display: flex;
+    margin-left:10vw ;
+    height: 18vh;
+    margin-top: 0;
+    background-color:#9ad4d6;
+    width: 15vw;
+    padding: 1rem,1rem,1rem,1rem;
+  }
+  .main1{
+    margin-top: 20vh;
+    height: 27vh;
+    width: 17vw;
+    margin-left: 10vw;
+  }
+  .mainc {
+    display: flex;
+  }
+  .mainh{
+    display: flex;
+  }
+  .main1k{
+    margin-top: 20vh;
+    height: 27vh;
+    width: 17vw;
+    margin-left: 1vw;
+  }
+  .h{
+    margin-top: 5vh;
+  }
+  .line{
+    margin-top: 22vh;
+    margin-left: 9vw;
+    font-size: 12vh;
+    font-family: "Baloo Bhaijaan 2";
+    font-weight: 800;
+    background: linear-gradient(135deg,#f2fdff,grey);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  .impact{
+    position: absolute;
+    background: linear-gradient(135deg,lightgrey,white);
+    width: 75vw;
+    height: 26vh;
+    margin-top: 17vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .important{
+    font-size: 6vh;
+    font-family: "Baloo Bhaijaan 2";
+    font-weight: 700;
+    margin-left: 6vw;
+    margin-top: 5vh;
+  }
+  .experience{
+    text-align: center;
+    height: 6vh;
+  }
+  .impact {
+    background: linear-gradient(135deg, #dfdfdf, #ffffff);  
+    box-shadow: 2px 2px 20px;
+}
+.main{
+  background: linear-gradient(white,grey);
+  height: 230vh;
+}
+.line2{
+  position: absolute;
+  background-color: white;
+  width: 0vw;
+  height: 1px;
+  margin-top: 30vh;
+  margin-left: 8.5vw;
+  transition: width 0.3s linear;
+  box-shadow: 1px 1px 5px;
+}
+.line4{
+  position: absolute;
+  background-color: white;
+  width: 0vw;
+  height: 1px;
+  margin-top: 45vh;
+  margin-left: 8.5vw;
+  transition: width 0.3s linear;
+  animation-direction: reverse;
+  box-shadow: 1px 1px 5px;
+}
+
+.anchor:hover{
+  text-decoration: underline;
+  cursor: pointer;
+  color: rgba(240, 255, 255, 0.585);
+  text-decoration-color: rgba(240, 255, 255, 0.585);;
+}
+.main{
+  text-align: center;
+  background:linear-gradient(white,lightgrey);
+  position: relative;
+}
+.topic{
+  font-family:"Baloo Bhaijaan 2" ;
+  font-size: 10vh;
+  font-weight: 600;
+  margin-top: 30vh;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+}
+.cards div div{
+  margin-right: 2vw;
+  height: 67vh;
+  padding: 1rem 1rem 1rem 1rem;
+  background:linear-gradient(white);
+}
+.card:hover{
+  background-image: linear-gradient(lightgrey,white);
+  box-shadow: 1px 1px 2px;
+  cursor:pointer;
+}
+.cards div div p{
+  margin-top: 1rem;
+}
+.cards div div img{
+  opacity: 1;
+}
+
+.line7{
+  position: absolute;
+  width: 0vw;
+  height: 2px;
+  background-color: black;
+  margin-top: 14vh;
+  margin-left: 9vw;
+  transition: width 1s linear;
+}
+.client{
+  height: 100vh;
+  background-color:white;
+  margin-top: 25vh;
+  color: black;
+  transition: background-color 3s linear;
+  transition: color 3s linear;
+  padding: 2rem;
+}
+.say{
+  font-family:"Lora" ;
+  font-size: 8vh;
+  font-weight: 500;
+}
+.small{
+  font-size: small;
+}
+.C {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.C.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.footer {
+  margin-top: 2vh;
+   background: #222;
+   color: white;
+   padding: 40px 0;
+
+}
+
+.ftop {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-bottom: 20px;
+   border-bottom: 1px solid #555;
+}
+
+.flogo {
+   display: flex;
+   align-items: center;
+}
+
+.flogo img {
+   height: 50px;
+   margin-right: 10px;
+}
+
+.fsocial a,
+.developer-social a {
+   color: white;
+   margin: 0 10px;
+   font-size: 20px;
+   transition: color 0.3s ease-in-out;
+}
+
+.fsocial a:hover,
+.developer-social a:hover {
+   color: #ffcc00;
+}
+
+.fcontent {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   gap: 30px;
+   padding: 20px 0;
+
+}
+
+.fsection h3 {
+   margin-bottom: 15px;
+   color: #e4c031;
+   /* color: #ffcc00; */
+
+}
+
+.fsection ul {
+  /* margin-left: 2vw; */
+   list-style: none;
+
+
+}
+
+.fsection ul li {
+   margin-bottom: 7px;
+}
+
+.fsection ul li a {
+   color: white;
+   text-decoration: none;
+   transition: color 0.3s;
+}
+
+.fsection ul li a:hover {
+   color: #ffcc00;
+}
+
+.fbottom {
+   text-align: center;
+   padding-top: 15px;
+   border-top: 1px solid #555;
+}
+
+.fsection p,ul,a{
+  margin-left: 15px;
+}
+.developer-social{
+  margin-left: 15px;
+  margin-top: -15px;
+}
+.response{
+  background-color: white;
+  height: 50vh;
+  width:95vw;
+  display: flex;
+  margin-top:10vh ;
+  justify-content: space-around;
+  align-items: center;
+}
+.response div{
+  width: 42vw;
+  background-color: white;
+  box-shadow: 2px 10px 10px black;
+  height: 44vh;
+}
+.photo1{
+  position: absolute;
+  height: 22vh;
+  width: 22vh;
+  background-color: black;
+  border-radius: 50%;
+  margin-top: -35vh;
+  margin-left: 80.5vw;
+}
+.photo2{
+  position: absolute;
+  height: 22vh;
+  width: 22vh;
+  background-color: black;
+  border-radius: 50%;
+  margin-top: -35vh;
+  margin-left: 33vw;
+}
+.photo1 img{
+  position: absolute;
+  height: 20vh;
+  width: 20vh;
+  background-color: black;
+  border-radius: 50%;
+  margin-top: 1vh;
+  margin-left: -5vw;
+}
+.img img{
+  height: 5vh;
+  width: 5vw;
+  margin-top: -0.5rem;
+}
+.photo2 img{
+  position: absolute;
+  height: 20vh;
+  width: 20vh;
+  background-color: black;
+  border-radius: 50%;
+  margin-top: 1vh;
+  margin-left: -5vw;
+
+}
+div .tex{
+  width: 28vw;
+  box-shadow: none;
+  font-family: "Baloo Bhaijaan 2";
+  margin-top: 7vh;
+  height: 32vh;
+  font-size: small;
+  margin-left: 5px;
+}
+.tex i{
+  margin-left: 1vw;
+}
+
+
+
+.nav-toggle{
+  display: none;
+}
+@media (max-width: 480px){
+  .logo{
+  display: flex;
+  position: relative;
+
+}
+.main{
+  height: 470vh;
+}
+.line4{
+  margin-top: 40rem;
+}
+.line2{
+  margin-top: 15rem;
+}
+.cards{
+  display: block;
+}
+.card-body{
+  height: 0vh;
+}
+.cards div div{
+  height: 55vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.img{
+width: 15vw;
+}
+.img img{
+width: 12vw;
+height: 4vh;
+margin-top: 0px;
+}
+.logo div{
+  font-size: 3.5vh;
+}
+.name{
+height: 7vh;
+font-size: medium;
+width: fit-content;
+margin-top:2vh;
+}
+.main-head{
+display: block;
+height: 20vh;
+}
+.head{
+height: 90vh;
+}
+.head1{
+  display: flex;
+  justify-content: space-between;
+}
+.nav-toggle{
+color: white;
+display:flex;
+font-size: larger;
+text-align: right;
+margin-right: 2rem;
+margin-top: 4.5vh;
+}
+.nav-toggle:hover{
+  cursor: pointer;
+}
+.nav{
+  position: fixed;
+  height: 120vh;
+  width: 0vw;
+  background: linear-gradient(135deg, #1a1a1a, #2e2e2e);
+  top: 0px;
+  opacity: 0.99;
+  z-index: 90;
+  color: #f1f1f1;  /* for navbar links */
+
+.nav a:hover {
+  color: #ffcc70;  /* soft amber on hover */
+}
+  margin-left:0px ;
+  
+  }
+  
+
+  
+  .line6{
+    opacity: 100;
+    z-index: 100;
+    margin-left:0px ;
+    position: absolute;
+    margin-top: 38vh;
+    background-color: #ffffff;
+    height: 1px;
+    transition: width 0.5s ease-in-out;
+    }
+    .line5{
+    opacity: 100;
+    z-index: 100;
+    margin-left:0px ;
+    position: absolute;
+    margin-top: 17vh;
+    background-color: #ffffff;
+    height: 1px;
+    transition: width 0.5s ease-in-out;
+  
+    }
+    .line3{
+    opacity: 100;
+    z-index: 100;
+    margin-left:0px ;
+    position: absolute;
+    margin-top: 57vh;
+    height: 1px;
+    background-color: #ffffff;
+    transition: width 0.5s ease-in-out;
+    }
+    .line8{
+    opacity: 100;
+    z-index: 100;
+    margin-left:0px ;
+    position: absolute;
+    margin-top: 78vh;
+    background-color: #ffffff;
+    height: 1px;
+    transition: width 0.5s ease-in-out;
+    }
+.nav div button{
+display: none;
+}
+.nav div{
+display: block;
+margin-left: 10px;
+width: 100%;
+}
+.impact{
+width: 100vw;
+margin-top: 11vh;
+}
+.line{
+font-size: 10vh;
+margin-top: 10vh;
+}
+.anchor{
+opacity: 0;
+transition: opacity 0s ease-in-out;
+}
+.important{
+font-size: 5vh;
+width: 5vw;
+margin-right: 25vw;
+}
+.experience{
+font-size: 2vh;
+margin-right: 5vw;
+margin-left: 8vw;
+}
+.response{
+  height: 120vh;
+  width:95vw;
+  background-color: white;
+  display: block;
+  margin-top:10vh ;
+}
+.response div{
+  width: 80vw;
+  background-color: white;
+  box-shadow: 2px 10px 10px black;
+  margin-top: 25vh;
+  height:50vh
+
+
+}
+.client{
+  height: 190vh;
+}
+.photo1{
+  position: absolute;
+  height: 20vh;
+  width: 20vh;
+  background-color: black;
+  border-radius: 50%;
+  margin-top: -135vh;
+  margin-left: 22vw;
+}
+.photo2{
+  position: absolute;
+  height: 20vh;
+  width: 20vh;
+  background-color: black;
+  border-radius: 50%;
+  margin-top: -59vh;
+  margin-left: 22vw;
+}
+.tex{
+  padding-top: 10vh;
+}
+.photo2 img{
+  margin-left: -20vw;
+  margin-top: 0vh;
+}
+.photo1 img{
+  margin-left: -20vw;
+  margin-top: 0vh;
+}
+
+}
+
+
+
+
+
+
+
+.logo {
+  cursor: pointer;
+}
+
+

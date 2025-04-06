@@ -1,0 +1,643 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.head{
+    position: relative;
+    height: 85vh;
+    background-image: url("pexels-rquiros-2219024.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+.head::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 1;
+    display: grid;
+}
+.contact{
+    position: absolute;
+    font-family: "Baloo Bhaijaan 2", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 11vh;
+    color: white;
+    opacity: 0;
+    z-index: 2;
+    margin-top: 40vh;
+    transition: opacity 1s ease-in-out;
+    margin-left: 39vw;
+}
+.main-head{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 3;
+}
+.logo{
+    display: flex;
+}
+
+.nav{
+    display: flex;
+    margin-left:35vw ;
+
+}
+.img img{
+    height: 5vh;
+    width: 5vw;
+    margin-top: -0.5rem;
+}
+.nav div{
+    margin-right: 1vw;
+    margin-top: 5vh;
+    font-size: larger;
+}
+.logo div{
+    margin-left: 2vw;
+    margin-top: 3vh;
+    font-size: 5vh;
+}
+.name{
+    font-size: larger;
+}
+.nav div a{
+    text-decoration: none;
+    color: white;
+}
+
+  .name{
+    background: linear-gradient(#f2fdff,#9ad4d6,#dbcbd8,red);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 5vh;
+    font-family: "Lora";
+  }
+  .anchor:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: rgba(240, 255, 255, 0.585);
+    text-decoration-color: rgba(240, 255, 255, 0.585);;
+  }
+
+.line{
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 1s ease-in-out;
+}
+.line1{
+    margin-top: 40vh;
+    margin-left: 32vw;
+}
+.line2{
+    margin-top: 60vh;
+    margin-left: 32vw;
+}
+.bold{
+    position: absolute;
+    margin-top: 6vw;
+    margin-left: 5vw;
+    font-family: "Baloo Bhaijaan 2";
+}
+.para2{
+    position: absolute;
+    margin-top: 12vw;
+    margin-left: 9vw;
+    font-size: larger;
+}
+.para1{
+    position: absolute;
+    margin-top: 12vw;
+    margin-left: 4vw;
+    font-size: larger;
+}
+.para3{
+    position: absolute;
+    margin-top: 12vw;
+    margin-left: 5.5vw;
+    font-size: larger;
+}
+.footer {
+    margin-top: 2vh;
+     background: #222;
+     color: white;
+     padding: 40px 0;
+
+ }
+
+ .ftop {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding-bottom: 20px;
+     border-bottom: 1px solid #555;
+ }
+
+ .flogo {
+     display: flex;
+     align-items: center;
+ }
+
+ .flogo img {
+     height: 50px;
+     margin-right: 10px;
+ }
+
+ .fsocial a,
+ .developer-social a {
+     color: white;
+     margin: 0 10px;
+     font-size: 20px;
+     transition: color 0.3s ease-in-out;
+ }
+
+ .fsocial a:hover,
+ .developer-social a:hover {
+     color: #ffcc00;
+ }
+
+ .fcontent {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+     gap: 30px;
+     padding: 20px 0;
+
+ }
+
+ .fsection h3 {
+     margin-bottom: 15px;
+     color: #e4c031;
+     /* color: #ffcc00; */
+
+ }
+
+ .fsection ul {
+    /* margin-left: 2vw; */
+     list-style: none;
+
+
+ }
+
+ .fsection ul li {
+     margin-bottom: 7px;
+ }
+
+ .fsection ul li a {
+     color: white;
+     text-decoration: none;
+     transition: color 0.3s;
+ }
+
+ .fsection ul li a:hover {
+     color: #ffcc00;
+ }
+
+ .fbottom {
+     text-align: center;
+     padding-top: 15px;
+     border-top: 1px solid #555;
+ }
+
+.fsection p,ul,a{
+    margin-left: 15px;
+}
+.developer-social{
+    margin-left: 15px;
+    margin-top: -15px;
+}
+.nav-toggle{
+    display: none;
+  }
+  /* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #4CAF50, #388E3C);
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+    height: 50vh; /* Covering 50% of viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    height: 50vh;
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450vh; /* Ensuring 200vh total height */
+    background: #fff;
+    padding: 50px;
+    flex-direction: column;
+    margin-top: 10vh;
+}
+
+.main-content {
+    width: 100%;
+}
+
+.service {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service.reverse {
+    flex-direction: row-reverse;
+}
+
+.image-container {
+    flex: 1;
+    max-width: 45%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.image-container img{
+    height: 30vh;
+    width: 30vh;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.text-container {
+    flex: 1;
+    max-width: 45%;
+    padding: 20px;
+}
+
+.text-container h2 {
+    font-size: 2.9rem;
+    color: black;
+    font-family: "Baloo Bhaijaan 2";
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.text-container p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.text-container button.learn-more {
+    background-color: #388E3C;
+    color: white;
+    font-size: 1rem;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.text-container button.learn-more:hover {
+    background-color: #4CAF50;
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .service {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .image-container, .text-container {
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .header-content h1 {
+        font-size: 2rem;
+    }
+
+    .text-container h2 {
+        font-size: 2rem;
+    }
+
+    .text-container p {
+        font-size: 1.1rem;
+    }
+}
+
+
+@media (max-width: 480px){
+    .logo{
+    display: flex;
+    position: relative;
+  
+  }
+  .main{
+    height: 550vh;
+    display: block;
+  }
+  .line4{
+    margin-top: 45rem;
+  }
+  .line2{
+    margin-top: 15rem;
+  }
+
+  
+  .contact{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 10vh;
+  }
+  .img{
+  width: 15vw;
+  }
+  .img img{
+  width: 10vw;
+  height: 4vh;
+  margin-top: 0px;
+  }
+  .logo div{
+    font-size: 3.5vh;
+  }
+  .name{
+  height: 7vh;
+  font-size: medium;
+  width: fit-content;
+  margin-top:2vh;
+  }
+  .main-head{
+  display: block;
+  height: 20vh;
+  }
+  .head{
+  height: 90vh;
+  }
+  .head1{
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-toggle{
+  color: white;
+  display:flex;
+  font-size: 3vh;
+  text-align: right;
+  margin-right: 0rem;
+  margin-top: 3.7vh;
+  margin-left: 3.6rem;
+  }
+ 
+  .nav-toggle:hover{
+    cursor: pointer;
+  }
+  .nav{
+  position: fixed;
+  height: 100vh;
+  width: 0vw;
+  background: linear-gradient(135deg, #1a1a1a, #2e2e2e);
+  top: 0px;
+  opacity: 0.99;
+  z-index: 90;
+  margin-left:0px ;
+  
+  }
+  .line6{
+    opacity: 100;
+    z-index: 100;
+    margin-left:0px ;
+    position: absolute;
+    margin-top: 38vh;
+    background-color: #ffffff;
+    height: 1px;
+    transition: width 0.5s ease-in-out;
+    }
+    .line5{
+    opacity: 100;
+    z-index: 100;
+    margin-left:0px ;
+    position: absolute;
+    margin-top: 17vh;
+    background-color: #ffffff;
+    height: 1px;
+    transition: width 0.5s ease-in-out;
+  
+    }
+    .line3{
+    opacity: 100;
+    z-index: 100;
+    margin-left:0px ;
+    position: absolute;
+    margin-top: 57vh;
+    height: 1px;
+    background-color: #ffffff;
+    transition: width 0.5s ease-in-out;
+    }
+    .line8{
+    opacity: 100;
+    z-index: 100;
+    margin-left:0px ;
+    position: absolute;
+    margin-top: 78vh;
+    background-color: #ffffff;
+    height: 1px;
+    transition: width 0.5s ease-in-out;
+    }
+  .nav div button{
+  display: none;
+  }
+  .nav div{
+  display: block;
+  margin-left: 10px;
+  width: 100%;
+  }
+  .line{
+  font-size: 10vh;
+  margin-top: 10vh;
+  }
+  .anchor{
+  opacity: 0;
+  transition: opacity 0s ease-in-out;
+  }
+
+  .line1{
+    margin-top: 35vh;
+  }
+  .line2{
+    margin-top: 75vh;
+  }
+  
+  }
+  
+
+  @media (max-width: 768px) {
+    .service {
+      flex-direction: column !important;
+      text-align: center;
+      padding: 20px;
+    }
+  
+    .image-container {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .image-container img {
+      width: 100%;
+      height: auto;
+      max-height: 250px;
+      object-fit: cover;
+    }
+  
+    .text-container {
+      max-width: 100%;
+      padding: 10px;
+    }
+  
+    .text-container h2 {
+      font-size: 2rem;
+    }
+  
+    .text-container p {
+      font-size: 1rem;
+    }
+  
+    .text-container button.learn-more {
+      font-size: 1rem;
+      padding: 10px 16px;
+    }
+  }
+  .service {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 0.8s ease-out;
+  }
+  
+  .service.reverse {
+    transform: translateX(-100px);
+  }
+  
+  .service.show {
+    opacity: 1;
+    transform: translateX(0);
+
+  }
+  @media (max-width: 768px) {
+    .main {
+      height: auto;
+      padding: 30px 15px;
+    }
+  
+    .service {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 60px;
+    }
+  
+    .image-container {
+      max-width: 90%;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+  
+    .image-container img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+    }
+  
+    .text-container {
+      max-width: 90%;
+      text-align: center;
+      padding: 10px;
+    }
+  
+    .text-container h2 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+  
+    .text-container p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+  
+    .text-container button.learn-more {
+      padding: 10px 16px;
+      font-size: 0.95rem;
+      border-radius: 8px;
+    }
+  }
+
+  
+.logo {
+  cursor: pointer;
+}
+
+
